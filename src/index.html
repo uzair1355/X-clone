@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content transition-all duration-300 ease-in-out="width=device-width, initial-scale=1.0" />
+  <title>Home / X</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <style>
+    /* For a better dark mode scrollbar experience (optional) */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a202c;
+      /* A dark color */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #4a5568;
+      /* A gray color */
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #718096;
+      /* Lighter gray on hover */
+    }
+
+    .material-symbols-outlined font_large {
+      font-family: "Material Symbols Outlined";
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+
+      /* IMPORTANT: Remove fixed size so Tailwind works */
+      /* font-size: 24px; ← REMOVE THIS LINE */
+
+      font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+
+    .font_large {
+      font-size: 32px;
+    }
+
+    .font_small {
+      font-size: 20px;
+      color: rgb(13, 155, 216);
+    }
+
+    .font1_dot {
+      font-size: 21px;
+      color: rgb(134, 134, 131);
+    }
+
+    .font_dot2 {
+      font-size: 21px;
+      color: white;
+    }
+
+    .official_tick {
+      font-size: 20px;
+      color: rgb(0, 171, 214);
+    }
+
+    .footer_font {
+      font-size: 11px;
+      color: rgb(123, 123, 121);
+    }
+
+    .hovercolor:hover {
+      color: rgb(3, 117, 167);
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .content_icons {
+      font-size: 16px;
+      color: rgb(134, 134, 131);
+    }
+
+    .content_icons1 {
+      font-size: 18px;
+      color: rgb(134, 134, 131);
+    }
+
+    .number_size {
+      font-size: 14px;
+      color: rgb(134, 134, 131);
+    }
+  </style>
+  <link rel="stylesheet" href="./output.css" />
+</head>
+
+<body class=" flex w-315 mx-auto text-amber-50 bg-black h-[720px] overflow-hidden">
+
+  <div class="first w-70 flex flex-col border-r-[1px] border-x-gray-600  sticky z-10 top-0 left-0 ">
+    <div
+      class="icon m-[3px] w-[55px] h-[55px] mt-[5px] flex justify-center items-center transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900">
+      <svg viewBox="0 0 24 24" aria-hidden="true"
+        class="w-8 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+        <g>
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+          </path>
+        </g>
+      </svg>
+    </div>
+    <div class="sidebar w-3/4">
+      <ul class="space-y-1 text-[20px] font-bold">
+        <li
+          class="flex items-center h-12 gap-3 w-fit transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="material-symbols-outlined font_large"> home </span>
+          <span class="hidden md:block">Home</span>
+        </li>
+        <li
+          class="flex items-center h-12 gap-3 w-fit transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="material-symbols-outlined font_large"> search </span>
+          <span class="hidden md:block"> Explore</span>
+        </li>
+        <li
+          class="flex items-center h-12 gap-3 w-fit transit ion-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="material-symbols-outlined font_large">
+            notifications</span>
+          <span class="hidden md:block">Notifications</span>
+        </li>
+        <li
+          class="flex items-center h-12 gap-3 w-fit transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="material-symbols-outlined font_large text-7xl">mail
+          </span>
+          <span class="hidden md:block"> Messages</span>
+        </li>
+        <li
+          class="flex items-center h-12 gap-3 w-fit transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="material-symbols-outlined font_large">
+            android
+          </span>
+          <span class="hidden md:block"> Grok</span>
+        </li>
+        <li
+          class="flex items-center h-12 gap-3 w-fit transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="material-symbols-outlined font_large"> group </span>
+          <span class="hidden md:block "> Communities</span>
+        </li>
+        <li
+          class="flex items-center h-12 gap-3 w-fit transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="">
+            <svg viewBox="0 0 24 24" aria-hidden="true"
+              class="w-8 invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+              <g>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                </path>
+              </g>
+            </svg>
+          </span>
+          <span class="hidden md:block"> Premium</span>
+        </li>
+        <li
+          class="flex items-center h-12 gap-3 w-fit transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="material-symbols-outlined font_large"> person</span>
+          <span class="hidden md:block"> Profile</span>
+        </li>
+        <li
+          class="flex items-center h-12 gap-3 w-fit transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-3 hover:bg-zinc-900 cursor-pointer">
+          <span class="material-symbols-outlined font_large">
+            pending
+          </span>
+          <span class="hidden md:block"> More</span>
+        </li>
+        <li
+          class="flex items-center text-black font-medium justify-center mt-3 hover:bg-amber-50/70 border-1 border-x-gray-600 rounded-full bg-amber-50 h-13 gap-3 w-60 cursor-pointer">
+          Post
+        </li>
+
+        <li
+          class="flex items-center h-fit w-67 transition-all duration-300 ease-in-out hover:rounded-full hover:border-zinc-800 p-2 mt-9 hover:bg-zinc-900 cursor-pointer">
+          <div class="grid grid-cols-[1fr_5fr] justify-center w-fit items-center gap-x-3 relative">
+            <div class="w-11 h-11 rounded-full overflow-hidden">
+              <img src="../images/profile.jpg" class="w-full h-full object-cover" alt="" />
+            </div>
+            <div class="w-fit">
+              <h3 class="text-amber-50 text-[16px] font-medium">Uzair</h3>
+              <h3 class="text-gray-500 text-[15px]">@068Cse0934</h3>
+            </div>
+
+            <div class="dot absolute top-3 left-57">
+              <span class="material-symbols-outlined font_dot2">
+                more_horiz
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="second w-165 border-r-[1px] border-x-gray-600 overflow-y-scroll scrollbar-hide ">
+    <div
+      class="headerMid flex items-center w-full h-13  sticky top-0 bg-black opacity-80 hover:opacity-100 border-b-[1px] border-gray-600 ">
+      <div
+        class="w-1/2 flex justify-center h-13 items-center text-[16px] font-bold text-amber-50  hover:border-gray-600 hover:border-b-[1px] p-2 hover:bg-zinc-900">
+        For You
+      </div>
+      <div
+        class="w-1/2 flex justify-center h-13 items-center text-[16px]   text-amber-50  hover:border-gray-600 hover:border-b-[1px] font-bold p-2 hover:bg-zinc-900">
+        Following
+      </div>
+
+      <div class="slider w-[58px] h-1 bg-blue-500 absolute top-12 left-34 rounded-2xl"></div>
+    </div>
+
+    <div class="second-2 w-full h-33 flex flex-col p-3 space-y-4 justify-center    border-b-[1px] border-gray-600  ">
+      <div class="firstline w-full flex h-11 items-center gap-2">
+        <div class="w-11 h-11 rounded-full overflow-hidden cursor-pointer">
+          <img src="../images/profile.jpg" class="w-full h-full object-cover" alt="" />
+        </div>
+
+        <div class="font-normal text-[20px] text-zinc-400">
+          What's Happening?
+        </div>
+      </div>
+
+      <div class="secondline flex items-center justify-between w-full h-fit">
+        <div class="icons w-full gap-1 flex px-[48px]">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font_small">
+              image
+            </span>
+          </div>
+
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font_small">
+              gif_box
+            </span>
+          </div>
+
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font_small">
+              android
+            </span>
+          </div>
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font_small">
+              format_list_bulleted
+            </span>
+          </div>
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font_small">
+              sentiment_satisfied
+            </span>
+          </div>
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font_small">
+              calendar_clock
+            </span>
+          </div>
+          <div
+            class="2 flex justify-center items-center transition-all duration-300 cursor-pointer ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font_small">
+              location_on
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="post2 w-[75px] flex items-center pr-1 text-black font-medium justify-center hover:bg-amber-50/70 border-x-gray-600 rounded-full bg-amber-50 h-9 cursor-pointer">
+          Post
+        </div>
+      </div>
+    </div>
+
+    <div class="h-15 w-full text-blue-400 cursor-pointer  hover:bg-zinc-900 flex justify-center items-center     ">
+      Show 175 posts
+    </div>
+
+    <div
+      class="realcontent space-y-[8px]  p-2 hover:bg-zinc-900 flex w-full h-150 flex-col  border-t-[1px] border-gray-600  ">
+      <div class="1 space-y-1 flex items-center h-fit mx-[15px] transition-all duration-300 ease-in-out cursor-pointer">
+        <div class="grid grid-cols-[1fr_13fr] justify-center w-full gap-x-2 relative">
+          <div class="w-11 h-11 rounded-full overflow-hidden flex justify-center items-center">
+            <img src="../images/profile.jpg" class="w-full h-full object-cover hover:brightness-75" alt="" />
+          </div>
+
+          <div class="content_info w-full flex flex-col justify-center">
+            <div class="header_content flex justify-between h-fit items-center">
+              <div class="w-full flex-row space-x-1 h-1/2 flex items-center">
+                <h3 class="text-amber-50 text-[17px] font-bold hover:underline underline-offset-1 decoration-1">
+                  Uzair
+                </h3>
+                <span class="material-symbols-outlined official_tick">
+                  verified
+                </span>
+                <h3 class="text-gray-500 text-[15px]">@068Cse0934 ·</h3>
+                <h3 class="hover:underline underline-offset-1 decoration-1 text-gray-500 text-[15px]">
+                  Jul 27
+                </h3>
+              </div>
+              <div class="corner_icons flex flex-row items-center">
+                <div
+                  class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+                  <span class="material-symbols-outlined font1_dot hovercolor">
+                    android
+                  </span>
+                </div>
+                <div
+                  class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+                  <span class="material-symbols-outlined font1_dot hovercolor">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text_content">Beautiful. Just beautiful.</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="2 h-fit w-3/4 flex justify-center items-center border-[1px] border-white rounded-2xl overflow-hidden m-auto">
+        <img class="w-fit object-contain" src="../images/image.jpeg" alt="" />
+      </div>
+      <div class="3 w-fit flex ml-[75px] space-x-[80px]">
+        <div class="comment flex justify-center items-center w-fit hovercolor">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons hovercolor">
+              chat_bubble
+            </span>
+          </div>
+
+          <span class="flex justify-center items-center hovercolor number_size">156</span>
+        </div>
+
+        <div class="comment flex justify-center items-center w-fit hovercolor">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons hovercolor">
+              repeat
+            </span>
+          </div>
+
+          <span class="flex justify-center items-center hovercolor number_size">156</span>
+        </div>
+        <div class="comment flex justify-center items-center w-fit hovercolor">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons hovercolor">
+              favorite
+            </span>
+          </div>
+
+          <span class="flex justify-center items-center hovercolor number_size">156</span>
+        </div>
+        <div class="comment flex justify-center items-center w-fit hovercolor">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons hovercolor">
+              equalizer
+            </span>
+          </div>
+
+          <span class="flex justify-center items-center hovercolor number_size">156</span>
+        </div>
+        <div class="comment flex justify-center items-center w-fit">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons1 hovercolor">
+              bookmark
+            </span>
+          </div>
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons1 hovercolor">
+              upload
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="realcontent space-y-[8px]  p-2 hover:bg-zinc-900 flex w-full h-150 flex-col  border-t-[1px] border-gray-600  ">
+      <div class="1 space-y-1 flex items-center h-fit mx-[15px] transition-all duration-300 ease-in-out cursor-pointer">
+        <div class="grid grid-cols-[1fr_13fr] justify-center w-full gap-x-2 relative">
+          <div class="w-11 h-11 rounded-full overflow-hidden flex justify-center items-center">
+            <img src="../images/profile.jpg" class="w-full h-full object-cover hover:brightness-75" alt="" />
+          </div>
+
+          <div class="content_info w-full flex flex-col justify-center">
+            <div class="header_content flex justify-between h-fit items-center">
+              <div class="w-full flex-row space-x-1 h-1/2 flex items-center">
+                <h3 class="text-amber-50 text-[17px] font-bold hover:underline underline-offset-1 decoration-1">
+                  Uzair
+                </h3>
+                <span class="material-symbols-outlined official_tick">
+                  verified
+                </span>
+                <h3 class="text-gray-500 text-[15px]">@068Cse0934 ·</h3>
+                <h3 class="hover:underline underline-offset-1 decoration-1 text-gray-500 text-[15px]">
+                  Jul 27
+                </h3>
+              </div>
+              <div class="corner_icons flex flex-row items-center">
+                <div
+                  class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+                  <span class="material-symbols-outlined font1_dot hovercolor">
+                    android
+                  </span>
+                </div>
+                <div
+                  class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+                  <span class="material-symbols-outlined font1_dot hovercolor">
+                    more_horiz
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text_content">Beautiful. Just beautiful.</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="2 h-fit w-3/4 flex justify-center items-center border-[1px] border-white rounded-2xl overflow-hidden m-auto">
+        <img class="w-fit object-contain" src="../images/image.jpeg" alt="" />
+      </div>
+      <div class="3 w-fit flex ml-[75px] space-x-[80px]">
+        <div class="comment flex justify-center items-center w-fit hovercolor">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons hovercolor">
+              chat_bubble
+            </span>
+          </div>
+
+          <span class="flex justify-center items-center hovercolor number_size">156</span>
+        </div>
+
+        <div class="comment flex justify-center items-center w-fit hovercolor">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons hovercolor">
+              repeat
+            </span>
+          </div>
+
+          <span class="flex justify-center items-center hovercolor number_size">156</span>
+        </div>
+        <div class="comment flex justify-center items-center w-fit hovercolor">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons hovercolor">
+              favorite
+            </span>
+          </div>
+
+          <span class="flex justify-center items-center hovercolor number_size">156</span>
+        </div>
+        <div class="comment flex justify-center items-center w-fit hovercolor">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons hovercolor">
+              equalizer
+            </span>
+          </div>
+
+          <span class="flex justify-center items-center hovercolor number_size">156</span>
+        </div>
+        <div class="comment flex justify-center items-center w-fit">
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons1 hovercolor">
+              bookmark
+            </span>
+          </div>
+          <div
+            class="2 flex justify-center items-center transition-all cursor-pointer duration-300 ease-in-out w-auto p-[4px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined content_icons1 hovercolor">
+              upload
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="third flex flex-col w-80 space-y-1 overflow-y-scroll scrollbar-hide">
+    <div class="search sticky z-10 top-0 pt-1 left-2 pb-[50px] w-full h-13 bg-black">
+      <ul class="flex justify-center items-center flex-col space-y-3 min-w-full">
+        <li class="flex justify-center w-75 items-center">
+          <input type="text"
+            class="w-100 h-10 bg-black items-center text-white p-3 mt-1 border-[1px] rounded-full border-gray-600"
+            placeholder="Search" />
+        </li>
+      </ul>
+    </div>
+    <ul class="flex justify-center items-center flex-col space-y-3 min-w-full ">
+      <li
+        class="flex w-75 h-38 bg-black flex-col text-white space-y-2 px-2 justify-center mt-1 border-[1px] rounded-[10px] border-gray-600">
+        <p class="h1 w-full font-bold text-[20px]">Subscribe To Premium</p>
+
+        <p class="h1 w-full">
+          Subscribe to unlock new features and if eligible, receive a share
+          of revenue.
+        </p>
+
+        <p
+          class="flex items-center text-white font-medium justify-center hover:bg-blue-400/70 border-1 border-blue-500 rounded-full bg-blue-500 h-9 gap-3 w-25 cursor-pointer">
+          Subscribe
+        </p>
+      </li>
+
+      <li
+        class="flex w-75 h-fit bg-black flex-col text-white space-y-[5px] mt-[5px] border-[1px] rounded-[10px] border-gray-600">
+        <div class="w-full h-10 justify-center px-3 py-1 items-center">
+          <h1 class="text-[20px] text-amber-50 font-bold">
+            What’s happening
+          </h1>
+        </div>
+        <div
+          class="content transition-all duration-300 ease-in-out hover:border-[#16181C] cursor-pointer hover:bg-[#16181C] px-3 1 w-full h-20 justify-center items-center relative">
+          <ul class="justify-center items-center">
+            <li class="text-[14px] text-gray-500 font-light w-full h-6 flex flex-row justify-between">
+              <div class="1 w-ful p-[0.5px]">Entertainment · Trending</div>
+            </li>
+            <li class="w-fit h-auto font-bold">#MaheshBabu𓃵</li>
+            <li class="text-[14px] text-gray-500 font-light w-full h-6">
+              2,351 posts
+            </li>
+          </ul>
+
+          <div
+            class="2 flex justify-center items-center absolute left-65 top-1 transition-all duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font1_dot hovercolor">
+              more_horiz
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="content transition-all duration-300 ease-in-out hover:border-[#16181C] cursor-pointer hover:bg-[#16181C] px-3 1 w-full h-20 justify-center items-center relative">
+          <ul class="justify-center items-center">
+            <li class="text-[14px] text-gray-500 font-light w-full h-6 flex flex-row justify-between">
+              <div class="1 w-ful p-[0.5px]">Entertainment · Trending</div>
+            </li>
+            <li class="w-fit h-auto font-bold">#MaheshBabu𓃵</li>
+            <li class="text-[14px] text-gray-500 font-light w-full h-6">
+              2,351 posts
+            </li>
+          </ul>
+
+          <div
+            class="2 flex justify-center items-center absolute left-65 top-1 transition-all duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font1_dot hovercolor">
+              more_horiz
+            </span>
+          </div>
+        </div>
+        <div
+          class="content transition-all duration-300 ease-in-out hover:border-[#16181C] cursor-pointer hover:bg-[#16181C] px-3 1 w-full h-20 justify-center items-center relative">
+          <ul class="justify-center items-center">
+            <li class="text-[14px] text-gray-500 font-light w-full h-6 flex flex-row justify-between">
+              <div class="1 w-ful p-[0.5px]">Entertainment · Trending</div>
+            </li>
+            <li class="w-fit h-auto font-bold">#MaheshBabu𓃵</li>
+            <li class="text-[14px] text-gray-500 font-light w-full h-6">
+              2,351 posts
+            </li>
+          </ul>
+
+          <div
+            class="2 flex justify-center items-center absolute left-65 top-1 transition-all duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font1_dot hovercolor">
+              more_horiz
+            </span>
+          </div>
+        </div>
+        <div
+          class="content transition-all duration-300 ease-in-out hover:border-[#16181C] cursor-pointer hover:bg-[#16181C] px-3 1 w-full h-20 justify-center items-center relative">
+          <ul class="justify-center items-center">
+            <li class="text-[14px] text-gray-500 font-light w-full h-6 flex flex-row justify-between">
+              <div class="1 w-ful p-[0.5px]">Entertainment · Trending</div>
+            </li>
+            <li class="w-fit h-auto font-bold">#MaheshBabu𓃵</li>
+            <li class="text-[14px] text-gray-500 font-light w-full h-6">
+              2,351 posts
+            </li>
+          </ul>
+
+          <div
+            class="2 flex justify-center items-center absolute left-65 top-1 transition-all duration-300 ease-in-out w-auto p-[5px] hover:rounded-full border-none hover:bg-blue-400/30 border-1 hover:border-blue-500">
+            <span class="material-symbols-outlined font1_dot hovercolor">
+              more_horiz
+            </span>
+          </div>
+        </div>
+        <div
+          class="w-full h-11 flex transition-all duration-300 ease-in-out hover:border-[#16181C] hover:rounded-b-[10px] hover:bg-[#16181C] px-3 items-center">
+          <h1 class="text-[15px] cursor-pointer text-blue-500 flex items-center0">
+            <a href="https://x.com/explore/tabs/for-you">Show more</a>
+          </h1>
+        </div>
+      </li>
+
+      <li
+        class="flex w-75 h-fit bg-black flex-col text-white space-y-[5px] mt-[5px] border-[1px] rounded-[10px] border-gray-600">
+        <div class="w-full h-10 justify-center px-3 py-1 items-center">
+          <h1 class="text-[20px] text-amber-50 font-bold">
+            What To Follow!
+          </h1>
+        </div>
+        <div class="flex justify-center items-center">
+          <ul class="flex self-center items-center flex-col">
+            <li
+              class="content transition-all duration-300 ease-in-out hover:border-[#16181C] cursor-pointer hover:bg-[#16181C] px-3 w-full h-20 flex justify-center items-center">
+              <div class="grid grid-cols-[1fr_5fr_2fr] justify-center w-fit items-center gap-x-3 relative">
+                <div class="w-11 h-11 rounded-full overflow-hidden hover:brightness-75 transition">
+                  <img src="../images/profile.jpg" class="w-full h-full object-cover" alt="" />
+                </div>
+                <div class="w-fit">
+                  <h3 class="text-amber-50 text-[16px] font-medium hover:underline decoration-1 underline-offset-2">
+                    Uzair
+                  </h3>
+                  <h3 class="text-gray-500 text-[15px]">@068Cse0934</h3>
+                </div>
+                <div class="follow">
+                  <p
+                    class="flex items-center p-1 text-black text-[14px] font-semibold justify-center hover:bg-amber-50/70 border-white rounded-full bg-white h-9 gap-3 w-20 cursor-pointer">
+                    Follow
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="content transition-all duration-300 ease-in-out hover:border-[#16181C] cursor-pointer hover:bg-[#16181C] px-3 w-full h-20 flex justify-center items-center">
+              <div class="grid grid-cols-[1fr_5fr_2fr] justify-center w-fit items-center gap-x-3 relative">
+                <div class="w-11 h-11 rounded-full overflow-hidden hover:brightness-75 transition">
+                  <img src="../images/profile.jpg" class="w-full h-full object-cover" alt="" />
+                </div>
+                <div class="w-fit">
+                  <h3 class="text-amber-50 text-[16px] font-medium hover:underline decoration-1 underline-offset-2">
+                    Uzair
+                  </h3>
+                  <h3 class="text-gray-500 text-[15px]">@068Cse0934</h3>
+                </div>
+                <div class="follow">
+                  <p
+                    class="flex items-center p-1 text-black text-[14px] font-semibold justify-center hover:bg-amber-50/70 border-white rounded-full bg-white h-9 gap-3 w-20 cursor-pointer">
+                    Follow
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="content transition-all duration-300 ease-in-out hover:border-[#16181C] cursor-pointer hover:bg-[#16181C] px-3 w-full h-20 flex justify-center items-center">
+              <div class="grid grid-cols-[1fr_5fr_2fr] justify-center w-fit items-center gap-x-3 relative">
+                <div class="w-11 h-11 rounded-full overflow-hidden hover:brightness-75 transition">
+                  <img src="../images/profile.jpg" class="w-full h-full object-cover" alt="" />
+                </div>
+                <div class="w-fit">
+                  <h3 class="text-amber-50 text-[16px] font-medium hover:underline decoration-1 underline-offset-2">
+                    Uzair
+                  </h3>
+                  <h3 class="text-gray-500 text-[15px]">@068Cse0934</h3>
+                </div>
+                <div class="follow">
+                  <p
+                    class="flex items-center p-1 text-black text-[14px] font-semibold justify-center hover:bg-amber-50/70 border-white rounded-full bg-white h-9 gap-3 w-20 cursor-pointer">
+                    Follow
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="w-full h-11 transition-all duration-300 ease-in-out flex hover:border-[#16181C] hover:rounded-b-[10px] hover:bg-[#16181C] px-3 items-center">
+          <h1 class="text-[15px] cursor-pointer text-blue-500 flex items-center0">
+            <a href="https://x.com/i/connect_people?user_id=1903243030129201152">Show more</a>
+          </h1>
+        </div>
+      </li>
+
+      <li class="flex w-75 h-fit bg-black flex-col text-white space-y-[5px] mt-[5px] mb-20">
+        <div class="footer w-full flex gap-[3px] footer_font">
+          <div class="1st w-fit flex">
+            <span
+              class="w-full whitespace-nowrap hover:underline decoration-1 underline-offset-1 transition-all duration-75 ease-in-out cursor-pointer p-[3px] h-fit">Terms
+              of Service</span>
+            <span class="w-full p-[3px] h-fit">|</span>
+          </div>
+          <div class="2nd flex w-fit">
+            <span
+              class="w-full whitespace-nowrap hover:underline decoration-1 underline-offset-1 transition-all duration-75 ease-in-out cursor-pointer p-[3px] h-fit">Privacy
+              Policy</span>
+            <span class="w-full p-[3px] h-fit">|</span>
+          </div>
+          <div class="3rd flex w-fit">
+            <span
+              class="w-full whitespace-nowrap hover:underline decoration-1 underline-offset-1 transition-all duration-75 ease-in-out cursor-pointer p-[3px] h-fit">Cookie
+              Policy</span>
+            <span class="w-full p-[3px] h-fit">|</span>
+          </div>
+        </div>
+        <div class="footer1 w-full flex gap-[3px] footer_font">
+          <div class="4th flex w-fit">
+            <span
+              class="w-full whitespace-nowrap hover:underline decoration-1 underline-offset-1 transition-all duration-75 ease-in-out cursor-pointer p-[3px] h-fit">Accessibility</span>
+            <span class="w-full p-[3px] h-fit">|</span>
+          </div>
+          <div class="5th flex w-fit">
+            <span
+              class="w-full whitespace-nowrap hover:underline decoration-1 underline-offset-1 transition-all duration-75 ease-in-out cursor-pointer p-[3px] h-fit">Ads
+              Info</span>
+            <span class="w-full p-[3px] h-fit">|</span>
+          </div>
+          <div class="6th flex w-fit">
+            <span
+              class="w-full whitespace-nowrap hover:underline decoration-1 underline-offset-1 transition-all duration-75 ease-in-out cursor-pointer p-[3px] h-fit">
+              More ...</span>
+            <span class="w-full p-[3px] h-fit">|</span>
+          </div>
+          <div class="7th flex w-fit">
+            <span
+              class="w-full whitespace-nowrap hover:underline decoration-1 underline-offset-1 transition-all duration-75 ease-in-out cursor-pointer p-[3px] h-fit">©
+              2025 X Corp.</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
